@@ -1,0 +1,85 @@
+body{
+	font-family: Verdana;
+    font-size: 15px;
+	color: white;
+	font: strong;
+	text-align: center;
+	background-color: black;
+}
+
+input{
+    border: 1px solid #aaa;
+    width: 200px;
+    padding: 4px;
+	margin-bottom: 15px;
+}
+
+input[type = submit]{
+	margin-right: 210px;
+}
+
+#contenedor{
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto;
+}
+
+.namePersonajes
+{
+	margin-top: 260px;
+}
+#info
+{	
+	color:red;
+	padding-left: 10px;
+	text-align: left;
+	width: 200px;
+	height: 200px;
+	margin-left: 400px;
+	border: 2px solid red;
+	position:absolute;
+	margin-top: 400px;
+}
+
+#Guerrero{
+
+	background-image: url('guerrero.jpg');
+}
+
+#Valkiria{
+
+	background-image: url('valkiria.jpg');
+}
+
+#Clérigo{
+
+	background-image: url('clerigo.jpg');
+}
+
+.titulo{
+	font-size: 46px;
+	position:absolute;
+	margin-left: 310px;
+	float:left;
+	color: blue;
+}
+
+.personaje{
+	margin-top: 80px;
+	background-position: center;
+	width: 200px;
+	height: 250px;
+	float: left;
+	margin-left: 100px;
+	cursor: pointer;
+	border: black 2px solid;
+}
+#botonElegir
+{
+	margin-top: 300px;
+	margin-left:200px;
+}
+
+
+
+
