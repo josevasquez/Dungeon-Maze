@@ -26,40 +26,27 @@ input[type = submit]{
 
 .namePersonajes
 {
-	margin-top: 260px;
+	margin-top: 10px;
 }
-#info
+.info
 {	
-	color:red;
-	padding-left: 10px;
-	text-align: left;
-	width: 200px;
-	height: 200px;
-	margin-left: 400px;
-	border: 2px solid red;
-	position:absolute;
 	margin-top: 400px;
+	background-position: center;
+	width: 200px;
+	height: 100px;
+	margin-left: 410px;
+	cursor: pointer;
+	border: darkred 2px solid;
+	text-align: left;
 }
-
-#Guerrero{
-
-	background-image: url('guerrero.jpg');
+.personaje a:hover
+{
+	background-color: blue;
 }
-
-#Valkiria{
-
-	background-image: url('valkiria.jpg');
-}
-
-#Clérigo{
-
-	background-image: url('clerigo.jpg');
-}
-
 .titulo{
 	font-size: 46px;
 	position:absolute;
-	margin-left: 310px;
+	margin-left: 350px;
 	float:left;
 	color: blue;
 }
@@ -67,8 +54,8 @@ input[type = submit]{
 .personaje{
 	margin-top: 80px;
 	background-position: center;
-	width: 200px;
-	height: 250px;
+	width: 189px;
+	height: 267px;
 	float: left;
 	margin-left: 100px;
 	cursor: pointer;
@@ -76,7 +63,7 @@ input[type = submit]{
 }
 #botonElegir
 {
-	margin-top: 300px;
+	margin-top: 50px;
 	margin-left:200px;
 }
 
