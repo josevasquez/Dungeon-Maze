@@ -1,0 +1,51 @@
+<!doctype>
+<html>
+	<head>
+		<title>Personajes</title>
+		<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+		<link href="miestilo.css" rel="stylesheet" type="text/css" />
+		<script>
+		$(document).ready(function()
+		{
+			$('#contenedor').css({'background-image':'url(fondo.jpg)'});
+			$('.personaje a img').hover(function() {
+            // hover in
+            $(this).animate({height: "280",width: "220"}, "slow");
+				$('.personaje').css({'border': 'none'});
+			}, 
+			function() {
+			// hover out
+			$(this).animate({height: "267",width: "189"}, "fast");
+				$('.personaje').css({'height':'267', 'width':'189'});
+			});
+		});	
+		</script>
+	</head>
+	<body>
+		<EMBED SRC="Mision_Imposible.mid " AUTOSTART="true" hidden="true" >
+	<div id="contenedor">
+		<div class="personaje"id="guerrero">
+			<a href="#"><img src="guerrero.jpg" alt=""></a>
+		</div>
+		<div id="guerreroT">
+			<h2>Guerrero</h2>
+			<p>Lamentablemente, la etiqueta BUTTON tiene diversas interpretaciones por parte de los distintos navegadores del mercado. Desde desarrollo web .com advertimos que se debe tener cuidado cuando la usemos, porque estas incompatibilidades podrían perjudicar el buen funcionamiento de la página.</p>
+		</div>
+		<div class="personaje"id="clerigo">
+			<a href="#"><img src="clerigo.jpg" alt=""></a>
+		</div>
+		<div id="clerigoT">
+			<h2>Clerigo</h2>
+			<p>Lamentablemente, la etiqueta BUTTON tiene diversas interpretaciones por parte de los distintos navegadores del mercado. Desde desarrollo web .com advertimos que se debe tener cuidado cuando la usemos, porque estas incompatibilidades podrían perjudicar el buen funcionamiento de la página.</p>
+		</div>
+		<div class="personaje"id="valkiria">
+			<a href="#"><img src="valkiria.jpg" alt=""></a>
+		</div>
+		<div id="valkiriaT">
+			<h2>Valkiria</h2>
+			<p>Lamentablemente, la etiqueta BUTTON tiene diversas interpretaciones por parte de los distintos navegadores del mercado. Desde desarrollo web .com advertimos que se debe tener cuidado cuando la usemos, porque estas incompatibilidades podrían perjudicar el buen funcionamiento de la página.</p>
+		</div>
+		<INPUT id="botonBack"  type="button" value="Back" onClick="location.href = 'inicio.html'">
+	</div>
+	</body>
+</html>
