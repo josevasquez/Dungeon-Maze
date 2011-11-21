@@ -12,16 +12,8 @@
 		<link href="miestilo.css" rel="stylesheet" type="text/css" />
 		<script>
 		$(document).ready(function(){
-				CambiarFondo();
-				$('#botonSalir').onClick(function()
-			{
-				var respuesta;
-				respuesta = confirm("¿Estás seguro que deseas salir?");
-				if(respuesta){
-					alert("Gracias por la visita!");
-				}
-			});
-			$('#musica').hide();
+				CambiarFondo();	
+				$('.alerta').hide();
 		});
 		var contador = 1;
 		function CambiarFondo()
@@ -63,7 +55,6 @@
 		</script>
 	</head>
 	<body>
-		<EMBED SRC="Mision_Imposible.mid " AUTOSTART="true" hidden="true" >
 		<a href="Juego.html"><p id="text1">
 		D<br/>
 		U<br/>
@@ -91,14 +82,16 @@
 					<img src="mainImage.jpg" alt="imagen" />
 				</div>
 				<div id="form">
-				<form action="" method="post">
+				<form  action="" method="post">
 					<label class="nombre" for="texto" >Nombre:</label>
 					<input class="nombre" type="text" id="nombreText" name="nombre" /><br />
+					
+					<INPUT class="boton" id="botonEntrar"  type="button" value="Entrar" onClick="location.href = 'EleccionPersonaje.html'">
+					<INPUT class="boton" id="botonInst"  type="button" value="Instrucciones" onClick="location.href = 'Instrucciones.html'"> 					
+					<INPUT class="boton"id="botonPersonajes"  type="button" value="Personajes" onClick="location.href = 'Personajes.html'">
+					<INPUT class="boton"id="botonHabitaciones"  type="button" value="Habitaciones"  onClick="location.href = 'Habitaciones.html'">
+					<INPUT class="boton"id="botonSalir"  type="button" value="Salir"onClick="location.href = 'http://www.google.com'">
 				</form>
-					<INPUT id="botonEntrar"  type="button" value="Entrar" onClick="location.href = 'EleccionPersonaje.html'"> 
-					<INPUT id="botonPersonajes"  type="button" value="Personajes" onClick="location.href = 'Personajes.html'">
-					<INPUT id="botonHabitaciones"  type="button" value="Habitaciones"  onClick="location.href = 'Habitaciones.html'">
-					<INPUT id="botonSalir"  type="button" value="Salir">
 				</div>
 			</div>
 		</div>
