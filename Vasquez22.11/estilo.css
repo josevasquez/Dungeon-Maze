@@ -1,0 +1,75 @@
+*{
+	background-color: black;
+}
+#all{
+	height:750px;
+	width:1200px;
+	position:absolute;
+}
+#contenedor {
+    width: 800px;
+    height: 600px;
+    border: 3px solid #000;
+    position: absolute;
+	left: 320px;
+	top:100px;
+ border:2px solid red;
+}
+#final {
+	width: 800px;
+    height: 600px;
+    border: 3px solid #000;
+    position: absolute;
+	left: 320px;
+	top:100px;
+
+}
+#heroe {
+    width: 50px;
+    height: 50px;
+	/*background-image:url('heroe.jpg');*/
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #000;
+}
+#key {
+    width: 50px;
+    height: 50px;
+    background-image: url('key.jpg');
+    border: 1px solid #fff;
+    position: absolute;
+	left: 104px;
+    top: 104px;
+}
+#orco {
+    width: none;
+    height: none;
+    background-image: url('imagenes/goblinE.jpg');
+    border: 1px solid #FFF;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+#goblin{
+    width: none;
+    height: none;
+    background-image: url('imagenes/orcoE.jpg');
+    border: 1px solid #000;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#door {
+	width:0px;
+	height:0px;
+	background-image:url('puerta.jpg');
+	border: 3px solid black;
+	margin-left: 748px;
+    margin-top: none;
+}
+#ataque{
+	width:300px;
+	height:200px;
+	border: 3px solid black;
+	margin-top:400px;
+}

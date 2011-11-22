@@ -1,0 +1,97 @@
+<!doctype>
+<html>
+	<head>
+		<title>Bienvenido a Dungeon Maze </title>
+		<meta name="keywords" content="DungeonMazes, Dungeons , Mazes, Clerigos, Valkirias, Guerreros" >
+		<meta name="author" content="ShufflingCompany" >	
+		<meta name="category" content="Diversion" >
+		<meta name="language" content="Español" >
+		<meta name="Copyright" content="ShufflingCompany 2011">
+		<meta name="generator"  content="NotePad++" >
+		<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+		<link href="miestilo.css" rel="stylesheet" type="text/css" />
+		<script src="miscript.js" type="text/javascript"></script>
+		<script>
+		$(document).ready(function(){
+				CambiarFondo();	
+				$('.alerta').hide();
+	});
+		var contador = 1;
+		function CambiarFondo()
+		{
+		if(contador !=4)
+		{
+			var valor= "imagenes/"+contador+".jpg"
+			var src_img_div='url(\''+valor+'\')';
+				$("#encabezado").css('background-image',src_img_div);
+				$("#encabezado img").fadeOut('slow',function()
+				{
+					$("#encabezado img").attr('src',valor);
+				});
+				$("#encabezado img").fadeIn('slow');
+				$("#encabezado img").css('display','block');
+				setTimeout("CambiarFondo()",4000);
+				if(contador==1)
+				{
+					$("body a p").css({'color': 'blue'});
+				}
+				else
+					if(contador==2)
+					{
+						$("body a p").css({'color': 'red'});
+					}
+				else
+					if(contador==3)
+				{
+					$("body a p").css({'color': 'gold'});
+				}
+				contador +=1;	
+		}
+		else
+		{
+			contador=1;
+			setTimeout("CambiarFondo()",1000);
+		}
+		}
+		</script>
+	</head>
+	<body>
+		<a href="Juego.html"><p id="text1">
+		D<br/>
+		U<br/>
+		N<br/>
+		G<br/>
+		E<br/>
+		O<br/>
+		N<br/>
+		</p></a>
+		<a href="Juego.html"><p id="text2">
+		M<br/>
+		A<br/>
+		Z<br/>
+		E<br/>
+		</p></a>
+		<div id="contenedor">
+			<div class="images"id="encabezado">
+				<img src="imagenes/1.jpg" alt="imagen"/>
+			</div>
+			<div class="images" id="banner">
+				<a href="inicio.html"><img src="imagenes/logo.jpg" alt="imagen"/></a>
+			</div>
+			<div id="main">
+				<div id="mainImage">
+					<img src="imagenes/mainImage.jpg" alt="imagen" />
+				</div>
+				<div id="form">
+				<form  id="formulario" action="" method="post">
+					<INPUT class="boton" id="botonEntrar"  type="button" value="Entrar" >
+					<INPUT class="boton" id="botonInst"  type="button" value="Instrucciones" onClick="location.href = 'Instrucciones.html'"> 					
+					<INPUT class="boton"id="botonPersonajes"  type="button" value="Personajes" onClick="location.href = 'Personajes.html'">
+					<INPUT class="boton"id="botonHabitaciones"  type="button" value="Habitaciones"  onClick="location.href = 'Habitaciones.html'">
+					<INPUT class="boton"id="botonSalir"  type="button" value="Salir"onClick="location.href = 'http://www.google.com'">
+				</form>
+				</div>
+			</div>
+		</div>
+	</body>
+<html>

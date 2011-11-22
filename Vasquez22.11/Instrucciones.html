@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Instrucciones</title>
+		<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+		<link href="miestilo.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="contenedor">
+			<h1 class="titulo">Instrucciones</h1>
+			<div id="instrucciones">
+		<p>
+		Podrás seleccionar entre tres tipos de personaje: 
+		<ul>
+			<li>Guerrero</li>
+			<li>Clérigo</li>
+			<li>Valkiria</li>
+		</ul>
+		Una vez seleccionado el personajes el juego mostrará la primera de las tres habitaciones. 
+		En estas habitaciones habrá una llave que te permite pasar a la siguiente. Adicionalmente habrá oro y
+		monstruos que atacarán al personaje.<br/>
+		Los monstruos serán:
+		<ul>
+			<li>Goblin</li>
+			<li>Orco</li>
+		</ul>
+		Siempre la cantidad de enemigos debe sumar entre 40 y 80 puntos de vida en la habitación. La
+		cantidad de oro 100 y solamente una llave.
+		Cuando el personaje aparece los enemigos se acercarán a atacarlo. Cuando ambos se
+		encuentren en la misma posición se dará un combate. El personaje siempre
+		ataca primero.
+		Para el ataque se lanzan dos dados de 6 y a eso se le suma el valor del ataque. Si este es
+		mayor que la defensa entonces le hace el daño que indica la ficha del personaje.
+		Si el personaje toma la llave y sale antes de la habitación puede evadir las peleas.
+		Cada acción se dará por turno. Cada turno cada elemento del juego hará una acción que puede
+		ser caminar, atacar, defenderse, recoger algo. La única acción controlada por el jugador será la
+		de caminar hacía un lugar. El atacar se dará cuando se encuentre en la misma coordenada con
+		el enemigo, el defenderse se dará cuando sea atacado y el recoger algo cuando su posición
+		coincida con el oro o la llave.
+		El juego terminará cuando el personaje salga de la 3era habitación o muera por quedar con 0 o
+		menos puntos de vida.
+		Se deberá considerar una caja de texto que describa y muestre los valores de los golpes dados
+		y los puntos de vida le quedan al personaje y monstruos luego de cada golpe.<br/>
+		   <strong>Movimiento:</strong>
+		<ul>
+			<li> Arriba (w)</li>
+			<li> Abajo	(s)</li>
+			<li> Izquierda	(s)</li>
+			<li> Derecha	(d)</li>
+		</ul>
+		</p>
+		<div id="goblin">
+		<img src="imagenes/goblin.jpg" />
+		</div>
+		<div id="orco">
+		<img id="orco" src="imagenes/orco.jpg" />
+		</div>
+		</div>
+		</div>
+		<INPUT id="botonBack"  type="button" value="Back" onClick="location.href = 'inicio.html'"> 
+	</body>
+</html>
